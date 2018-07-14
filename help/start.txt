@@ -1,0 +1,16 @@
+Usage: demdb start [opts] <database name>
+
+  -p, --port
+      Port to listen on (default to 8081)
+
+  -s, --save
+      Save the database on disk
+
+  -d, --delay
+      Delay the server response (value in milliseconds)
+
+  -l, --log.level
+      Change the server log level (default: info)
+
+  -h, --help
+      Print this message

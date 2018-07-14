@@ -1,0 +1,54 @@
+{
+  "name": "demodb",
+  "version": "0.1.0",
+  "description": "An HTTP based database for demo purposes, workshop and so on.",
+  "main": "app.js",
+  "bin": {
+    "demodb": "cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js start demo",
+    "test": "standard && tap test/*.test.js test/*/*.test.js test/*/*/*.test.js",
+    "lint": "standard --fix"
+  },
+  "keywords": [
+    "lokijs",
+    "fastify",
+    "database",
+    "demo",
+    "workshop",
+    "utility",
+    "memory"
+  ],
+  "author": "Tomas Della Vedova - @delvedor (http://delved.org)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delvedor/demodb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/delvedor/demodb/issues"
+  },
+  "homepage": "https://github.com/delvedor/demodb#readme",
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "commist": "^1.0.0",
+    "fastify": "^1.2.1",
+    "fastify-autoload": "^0.3.0",
+    "fastify-plugin": "^1.2.0",
+    "fastify-sensible": "^0.2.0",
+    "help-me": "^1.1.0",
+    "hyperid": "^1.4.1",
+    "lokijs": "^1.5.5",
+    "minimist": "^1.2.0",
+    "pino-colada": "^1.4.4",
+    "pump": "^3.0.0",
+    "then-sleep": "^1.0.1"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1",
+    "tap": "^11.1.3"
+  }
+}
