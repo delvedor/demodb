@@ -1,6 +1,6 @@
 'use strict'
 
-const Fastify = require('Fastify')
+const Fastify = require('fastify')
 const fp = require('fastify-plugin')
 
 async function build () {
