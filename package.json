@@ -2,13 +2,13 @@
   "name": "demodb",
   "version": "0.1.0",
   "description": "An HTTP based database for demo purposes, workshop and so on.",
-  "main": "app.js",
+  "main": "client.js",
   "bin": {
     "demodb": "cli.js"
   },
   "scripts": {
     "start": "node cli.js start demo",
-    "test": "standard && tap test/*.test.js test/*/*.test.js test/*/*/*.test.js",
+    "test": "standard && tap test/*/*.test.js test/*/*/*.test.js",
     "lint": "standard --fix"
   },
   "keywords": [
@@ -39,6 +39,7 @@
     "fastify-autoload": "^0.3.0",
     "fastify-plugin": "^1.2.0",
     "fastify-sensible": "^0.2.0",
+    "got": "^8.3.2",
     "help-me": "^1.1.0",
     "hyperid": "^1.4.1",
     "lokijs": "^1.5.5",

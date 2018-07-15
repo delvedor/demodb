@@ -24,6 +24,19 @@ npm i demodb -g
 demodb start test
 ```
 
+### Client usage
+```
+npm i demodb
+```
+```js
+const Demodb = require('demodb')
+const demodb = new Demodb('http://localhost:8081')
+
+const col = demodb.collection('users')
+await col.insert({ winter: 'is coming', tag: 'got' })
+const result = await col.findOne({ tag: 'got' })
+```
+
 #### Need help?
 ```
 demodb help

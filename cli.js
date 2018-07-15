@@ -68,7 +68,7 @@ function start (args) {
   }
 
   const fastify = Fastify(options)
-  fastify.register(require('./app'), opts)
+  fastify.register(require('./server'), opts)
   fastify.listen(opts.port || 8081, assert.ifError)
 
   process.on('SIGTERM', shutdown)
