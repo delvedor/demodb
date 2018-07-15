@@ -1,6 +1,6 @@
 {
   "name": "demodb",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An HTTP based database for demo purposes, workshop and so on.",
   "main": "client.js",
   "bin": {
